@@ -7,7 +7,9 @@
 
 <servlet>
   <servlet-name>XmlRpcServlet</servlet-name>
-  <servlet-class>org.xml.rpc.server.MyXmlRpcServlet</servlet-class>
+  <servlet-class>org.xml.rpc.server.MyXmlRpcServletAuthentication</servlet-class>
+  <!-- In order to by-pass authentication, comment the above line and use the line below>
+  <servlet-class>org.xml.rpc.server.MyXmlRpcServletAuthentication</servlet-class>-->
   <init-param>
     <param-name>enabledForExtensions</param-name>
     <param-value>true</param-value>
